@@ -8,6 +8,7 @@ import ShopAllPage from "./components/shopAll/ShopAll";
 import SingleProductPage from "./components/products/SingleProductPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import BestSellersPage from "./components/bestsellers/BestSellers";
+import ShoppingCartPage from "./components/shoppingCart/ShoppingCart";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
           path="/shop/collections/product"
           element={<SingleProductPage />}
         ></Route>
-        {/* <Route exact path="/cart" element={<ShoppingCartPage />}></Route> */}
+        <Route exact path="/cart" element={<ShoppingCartPage />}></Route>
       </Routes>
     </Router>
   );
