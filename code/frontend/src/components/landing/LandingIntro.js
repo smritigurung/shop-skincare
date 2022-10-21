@@ -88,7 +88,7 @@ function LandingIntro() {
   const navigate = useNavigate();
 
   const shopBtn = () => {
-    navigate("/");
+    navigate("/shop");
   };
 
   return (

@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./components/landing/Landing";
+import LoginPage from "./components/auth/Login";
+import RegisterPage from "./components/auth/Register";
+import AboutPage from "./components/about/About";
 
 function App() {
   return (
@@ -8,7 +11,7 @@ function App() {
         <Route exact path="/" element={<LandingPage />}></Route>
         {/* <Route exact path="/shop" element={<ShopAllPage />}></Route>
         <Route exact path="/bestsellers" element={<BestSellersPage />}></Route>
-        <Route exact path="/brands" element={<BrandsPage />}></Route>
+        <Route exact path="/brands" element={<BrandsPage />}></Route> */}
         <Route exact path="/about" element={<AboutPage />}></Route>
         <Route exact path="/account/login" element={<LoginPage />}></Route>
         <Route
@@ -16,7 +19,7 @@ function App() {
           path="/account/register"
           element={<RegisterPage />}
         ></Route>
-        <Route
+        {/* <Route
           exact
           path="/shop/collections/product"
           element={<ProductPage />}
